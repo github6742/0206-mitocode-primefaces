@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>PrimeFaces Menu</title>
+    </h:head>
+    <h:body>
+        <h2>Menu</h2>
+        <h:form>
+            
+            <p:menu>
+                <p:submenu  label="Submenu 1">
+                    <p:menuitem value="Item 1" icon="ui-icon-disk" url="#"/>
+                    <p:menuitem value="Item 2" icon="ui-icon-arrorefresh-1-w" url="#"/>
+                </p:submenu>
+                <p:submenu  label="Submenu 2">
+                    <p:menuitem value="Item 3" icon="ui-icon-close" url="#"/>
+                </p:submenu>
+            </p:menu>
+            
+            <h2>MenuBar</h2>
+            <p:menubar>
+                <p:submenu  label="Submenu 1">
+                    <p:menuitem value="Item 1" icon="ui-icon-disk" url="#"/>
+                    <p:menuitem value="Item 2" icon="ui-icon-arrorefresh-1-w" url="#"/>
+                </p:submenu>
+                <p:submenu  label="Submenu 2">
+                    <p:menuitem value="Item 3" icon="ui-icon-close" url="#"/>
+                </p:submenu>
+            </p:menubar>
+            
+            <h2>Dock Bar</h2>
+            <p:dock position="bottom">
+                <p:menuitem value="Inicio" icon="/resources/images/23.jpg" url="#"/>
+                <p:menuitem value="Musica" icon="/resources/images/28.jpg" url="#"/>
+                <p:menuitem value="Suscribete" icon="/resources/images/54.jpg" url="#"/>
+            </p:dock>
+            
+            
+        </h:form>
+    </h:body>
+</html>
+

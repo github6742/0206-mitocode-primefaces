@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+          <style type="text/css">
+              
+              #p_chartid{
+                  width:400px;
+                  height:300px;
+              }
+
+          </style>
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Charts - Graficos Primefaces</h1>
+        <h:form>
+        <p:commandButton value="graficar" actionListener="#{productoBean.listar()}" update="panel" />
+        
+        <h:panelGroup id="panel" layout="block" >
+            <p:chart type="pie" model="#{productoBean.pieModel}" id="p_chartid" rendered="#{productoBean.pieModel != null}" />
+        </h:panelGroup>
+        </h:form>
+        <h2>Suscribite</h2>
+    </h:body>
+</html>
+

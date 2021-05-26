@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:commandButton value="Ver" onclick="PF('wdialog').show();"/>
+            <p:dialog id="dialog" widgetVar="wdialog" header="Aviso" modal="true" appendTo="@(body)" hideEffect="explode">
+                Mitocode
+                <p:commandButton value="OK" icon="io-icon-check" onclick="PF('wdialog').hide();"/>
+            </p:dialog>
+
+            
+            <p:commandButton value="Confirmacion" >
+                <p:confirm header="Confirmacion" message="Esta seguro de realizar la accion?" icon="ui-icon-alert"/>
+            </p:commandButton>
+            
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="explode"  width="350">
+                <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no ui-button-flat" icon="ui-icon-check"/>
+                <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-close"/>
+            </p:confirmDialog>
+        </h:form>
+    </h:body>
+</html>
+
